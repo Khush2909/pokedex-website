@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokédex - Explore</title>
+
+    <link rel="stylesheet" href="explore.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+
+                <div class="pokeball-logo">
+
+                    <div class="pokeball-center"></div>
+
+                </div>
+
+                <h1>Pokédex</h1>
+
+            </div>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    <b>Home</b>
+                </a>
+
+                <a href="explore.html">
+                    <b>Explore</b>
+                </a>
+
+                <a href="types.html">
+                    <b>Types</b>
+                </a>
+
+                <a href="Regions.html">
+                    <b>Regions</b>
+                </a>
+
+                <a href="My Team .html">
+                    <b>My Team</b>
+                </a>
+
+                <a href="About.html">
+                    <b>About</b>
+                </a>
+
+            </div>
+
+
+            <div class="searchPokemon">
+
+                <input
+                    type="search"
+                    placeholder="Search Pokémon..."
+                >
+
+            </div>
+
+        </nav>
+
+    </header>
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero-box">
+
+            <h1 class="hero-heading">
+                Explore Pokémon
+            </h1>
+
+            <p class="hero-line">
+                Search, filter and discover your favorite Pokémon.
+            </p>
+
+        </section>
+
+
+        <!-- SEARCH -->
+
+        <div class="searchbyname">
+
+            <input type="search"
+                placeholder="Search Pokémon by name or number...">
+
+        </div>
+
+
+        <!-- ================= TYPE FILTERS ================= -->
+
+        <div class="type-filters">
+
+            <button class="type-btn active">⚫ All</button>
+
+            <button class="type-btn normal">⚪ Normal</button>
+
+            <button class="type-btn fire">🔥 Fire</button>
+
+            <button class="type-btn water">💧 Water</button>
+
+            <button class="type-btn grass">🌿 Grass</button>
+
+            <button class="type-btn electric">⚡ Electric</button>
+
+            <button class="type-btn ice">❄️ Ice</button>
+
+            <button class="type-btn fighting">🥊 Fighting</button>
+
+            <button class="type-btn poison">☠️ Poison</button>
+
+            <button class="type-btn ground">🟤 Ground</button>
+
+            <button class="type-btn flying">🪽 Flying</button>
+
+            <button class="type-btn psychic">💗 Psychic</button>
+
+            <button class="type-btn bug">🐛 Bug</button>
+
+            <button class="type-btn rock">🪨 Rock</button>
+
+            <button class="type-btn ghost">👻 Ghost</button>
+
+            <button class="type-btn dragon">🐉 Dragon</button>
+
+            <button class="type-btn dark">🌑 Dark</button>
+
+            <button class="type-btn steel">⚙️ Steel</button>
+
+            <button class="type-btn fairy">✨ Fairy</button>
+
+        </div>
+
+
+        <!-- ================= DROPDOWNS ================= -->
+
+        <div class="generation">
+
+            <select class="type-gen">
+
+                <option>Select Type</option>
+
+                <option>All</option>
+
+                <option>Normal</option>
+                <option>Fire</option>
+                <option>Water</option>
+                <option>Grass</option>
+                <option>Electric</option>
+                <option>Ice</option>
+                <option>Fighting</option>
+                <option>Poison</option>
+                <option>Ground</option>
+                <option>Flying</option>
+                <option>Psychic</option>
+                <option>Bug</option>
+                <option>Rock</option>
+                <option>Ghost</option>
+                <option>Dragon</option>
+                <option>Dark</option>
+                <option>Steel</option>
+                <option>Fairy</option>
+
+            </select>
+
+
+            <select class="sort-by">
+
+                <option>Sort By</option>
+
+                <option>Number</option>
+
+                <option>Name</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ================= POKEMON GRID ================= -->
+
+        <div class="pokemon-grid">
+
+
+            <!-- 001 BULBASAUR -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#001</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                        alt="Bulbasaur">
+
+                </div>
+
+                <h3>Bulbasaur</h3>
+
+                <span class="type grass">Grass</span>
+                <span class="type poison">Poison</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 004 CHARMANDER -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#004</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+                        alt="Charmander">
+
+                </div>
+
+                <h3>Charmander</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 007 SQUIRTLE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#007</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+                        alt="Squirtle">
+
+                </div>
+
+                <h3>Squirtle</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 010 CATERPIE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#010</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+                        alt="Caterpie">
+
+                </div>
+
+                <h3>Caterpie</h3>
+
+                <span class="type bug">Bug</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 012 BUTTERFREE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#012</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+                        alt="Butterfree">
+
+                </div>
+
+                <h3>Butterfree</h3>
+
+                <span class="type bug">Bug</span>
+                <span class="type flying">Flying</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 019 RATTATA -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#019</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
+                        alt="Rattata">
+
+                </div>
+
+                <h3>Rattata</h3>
+
+                <span class="type normal">Normal</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 025 PIKACHU -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#025</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                        alt="Pikachu">
+
+                </div>
+
+                <h3>Pikachu</h3>
+
+                <span class="type electric">Electric</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 037 VULPIX -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#037</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
+                        alt="Vulpix">
+
+                </div>
+
+                <h3>Vulpix</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 039 JIGGLYPUFF -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#039</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
+                        alt="Jigglypuff">
+
+                </div>
+
+                <h3>Jigglypuff</h3>
+
+                <span class="type normal">Normal</span>
+                <span class="type fairy">Fairy</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 052 MEOWTH -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#052</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
+                        alt="Meowth">
+
+                </div>
+
+                <h3>Meowth</h3>
+
+                <span class="type normal">Normal</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 054 PSYDUCK -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#054</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+                        alt="Psyduck">
+
+                </div>
+
+                <h3>Psyduck</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 058 GROWLITHE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#058</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"
+                        alt="Growlithe">
+
+                </div>
+
+                <h3>Growlithe</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 063 ABRA -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#063</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"
+                        alt="Abra">
+
+                </div>
+
+                <h3>Abra</h3>
+
+                <span class="type psychic">Psychic</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 066 MACHOP -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#066</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"
+                        alt="Machop">
+
+                </div>
+
+                <h3>Machop</h3>
+
+                <span class="type fighting">Fighting</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 074 GEODUDE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#074</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
+                        alt="Geodude">
+
+                </div>
+
+                <h3>Geodude</h3>
+
+                <span class="type rock">Rock</span>
+                <span class="type ground">Ground</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 077 PONYTA -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#077</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"
+                        alt="Ponyta">
+
+                </div>
+
+                <h3>Ponyta</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 079 SLOWPOKE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#079</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"
+                        alt="Slowpoke">
+
+                </div>
+
+                <h3>Slowpoke</h3>
+
+                <span class="type water">Water</span>
+                <span class="type psychic">Psychic</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 081 MAGNEMITE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#081</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
+                        alt="Magnemite">
+
+                </div>
+
+                <h3>Magnemite</h3>
+
+                <span class="type electric">Electric</span>
+                <span class="type steel">Steel</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 088 GRIMER -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#088</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
+                        alt="Grimer">
+
+                </div>
+
+                <h3>Grimer</h3>
+
+                <span class="type poison">Poison</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 092 GASTLY -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#092</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"
+                        alt="Gastly">
+
+                </div>
+
+                <h3>Gastly</h3>
+
+                <span class="type ghost">Ghost</span>
+                <span class="type poison">Poison</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 094 GENGAR -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#094</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"
+                        alt="Gengar">
+
+                </div>
+
+                <h3>Gengar</h3>
+
+                <span class="type ghost">Ghost</span>
+                <span class="type poison">Poison</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 095 ONIX -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#095</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"
+                        alt="Onix">
+
+                </div>
+
+                <h3>Onix</h3>
+
+                <span class="type rock">Rock</span>
+                <span class="type ground">Ground</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 104 CUBONE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#104</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"
+                        alt="Cubone">
+
+                </div>
+
+                <h3>Cubone</h3>
+
+                <span class="type ground">Ground</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 109 KOFFING -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#109</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
+                        alt="Koffing">
+
+                </div>
+
+                <h3>Koffing</h3>
+
+                <span class="type poison">Poison</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 113 CHANSEY -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#113</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"
+                        alt="Chansey">
+
+                </div>
+
+                <h3>Chansey</h3>
+
+                <span class="type normal">Normal</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 118 GOLDEEN -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#118</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"
+                        alt="Goldeen">
+
+                </div>
+
+                <h3>Goldeen</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 129 MAGIKARP -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#129</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"
+                        alt="Magikarp">
+
+                </div>
+
+                <h3>Magikarp</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 130 GYARADOS -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#130</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"
+                        alt="Gyarados">
+
+                </div>
+
+                <h3>Gyarados</h3>
+
+                <span class="type water">Water</span>
+                <span class="type flying">Flying</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 132 DITTO -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#132</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+                        alt="Ditto">
+
+                </div>
+
+                <h3>Ditto</h3>
+
+                <span class="type normal">Normal</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 133 EEVEE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#133</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+                        alt="Eevee">
+
+                </div>
+
+                <h3>Eevee</h3>
+
+                <span class="type normal">Normal</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 134 VAPOREON -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#134</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
+                        alt="Vaporeon">
+
+                </div>
+
+                <h3>Vaporeon</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 135 JOLTEON -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#135</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"
+                        alt="Jolteon">
+
+                </div>
+
+                <h3>Jolteon</h3>
+
+                <span class="type electric">Electric</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 136 FLAREON -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#136</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
+                        alt="Flareon">
+
+                </div>
+
+                <h3>Flareon</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 143 SNORLAX -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#143</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"
+                        alt="Snorlax">
+
+                </div>
+
+                <h3>Snorlax</h3>
+
+                <span class="type normal">Normal</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 147 DRATINI -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#147</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"
+                        alt="Dratini">
+
+                </div>
+
+                <h3>Dratini</h3>
+
+                <span class="type dragon">Dragon</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 155 CYNDAQUIL -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#155</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png"
+                        alt="Cyndaquil">
+
+                </div>
+
+                <h3>Cyndaquil</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 172 PICHU -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#172</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png"
+                        alt="Pichu">
+
+                </div>
+
+                <h3>Pichu</h3>
+
+                <span class="type electric">Electric</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 196 ESPEON -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#196</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png"
+                        alt="Espeon">
+
+                </div>
+
+                <h3>Espeon</h3>
+
+                <span class="type psychic">Psychic</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 197 UMBREON -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#197</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png"
+                        alt="Umbreon">
+
+                </div>
+
+                <h3>Umbreon</h3>
+
+                <span class="type dark">Dark</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+            <!-- 249 Lugia -->
+ <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#249</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png"
+                        alt="Lugia">
+
+                </div>
+
+                <h3>Lugia</h3>
+
+                      <span class="type psychic">Psychic</span>
+            <span class="type flying">Flying</span>
+            <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+            <!-- 252 TREECKO -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#252</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png"
+                        alt="Treecko">
+
+                </div>
+
+                <h3>Treecko</h3>
+
+                <span class="type grass">Grass</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 255 TORCHIC -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#255</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png"
+                        alt="Torchic">
+
+                </div>
+
+                <h3>Torchic</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 258 MUDKIP -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#258</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png"
+                        alt="Mudkip">
+
+                </div>
+
+                <h3>Mudkip</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 280 RALTS -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#280</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png"
+                        alt="Ralts">
+
+                </div>
+
+                <h3>Ralts</h3>
+
+                <span class="type psychic">Psychic</span>
+                <span class="type fairy">Fairy</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 304 ARON -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#304</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png"
+                        alt="Aron">
+
+                </div>
+
+                <h3>Aron</h3>
+
+                <span class="type steel">Steel</span>
+                <span class="type rock">Rock</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 387 TURTWIG -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#387</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png"
+                        alt="Turtwig">
+
+                </div>
+
+                <h3>Turtwig</h3>
+
+                <span class="type grass">Grass</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 390 CHIMCHAR -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#390</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png"
+                        alt="Chimchar">
+
+                </div>
+
+                <h3>Chimchar</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 393 PIPLUP -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#393</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png"
+                        alt="Piplup">
+
+                </div>
+
+                <h3>Piplup</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 495 SNIVY -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#495</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png"
+                        alt="Snivy">
+
+                </div>
+
+                <h3>Snivy</h3>
+
+                <span class="type grass">Grass</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 498 TEPIG -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#498</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png"
+                        alt="Tepig">
+
+                </div>
+
+                <h3>Tepig</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 501 OSHAWOTT -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#501</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png"
+                        alt="Oshawott">
+
+                </div>
+
+                <h3>Oshawott</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 650 CHESPIN -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#650</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png"
+                        alt="Chespin">
+
+                </div>
+
+                <h3>Chespin</h3>
+
+                <span class="type grass">Grass</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 653 FENNEKIN -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#653</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png"
+                        alt="Fennekin">
+
+                </div>
+
+                <h3>Fennekin</h3>
+
+                <span class="type fire">Fire</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 656 FROAKIE -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#656</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png"
+                        alt="Froakie">
+
+                </div>
+
+                <h3>Froakie</h3>
+
+                <span class="type water">Water</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+            <!-- 722 ROWLET -->
+
+            <div class="pokemon-card">
+
+                <div class="card-top">
+                    <span>#722</span>
+                    <span class="heart">♡</span>
+                </div>
+
+                <div class="pokemon-area">
+
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png"
+                        alt="Rowlet">
+
+                </div>
+
+                <h3>Rowlet</h3>
+
+                <span class="type grass">Grass</span>
+                <span class="type flying">Flying</span>
+
+                <span class="card-arrow">›</span>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

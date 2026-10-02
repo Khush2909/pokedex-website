@@ -1,0 +1,1472 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    background-image: url(ChatGPT\ Image\ Sep\ 23\,\ 2026\,\ 05_17_07\ PM.png);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 25px rgba(80, 150, 200, 0.15);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 25px;
+
+    color: #173b5f;
+}
+
+
+nav:hover {
+    cursor: pointer;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+
+    color: #173b5f;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #173b5f;
+}
+
+
+a:hover {
+    color: #2563eb;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.searchPokemon input {
+    background: rgba(255, 255, 255, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 12px;
+
+    padding: 12px 20px;
+
+    color: #1f3b5b;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(80, 150, 200, 0.15);
+
+    outline: none;
+}
+
+
+.searchPokemon input::placeholder {
+    color: #6f8497;
+}
+
+
+.searchPokemon input:focus {
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+
+/* =========================
+   POKEBALL LOGO
+========================= */
+
+.pokeball-logo {
+    width: 45px;
+    height: 45px;
+
+    background: linear-gradient(
+        to bottom,
+        #ef4444 0%,
+        #ef4444 46%,
+        #111827 46%,
+        #111827 54%,
+        #ffffff 54%,
+        #ffffff 100%
+    );
+
+    border: 3px solid #111827;
+
+    border-radius: 50%;
+
+    position: relative;
+}
+
+
+.pokeball-center {
+    width: 14px;
+    height: 14px;
+
+    background: white;
+
+    border: 3px solid #111827;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.description {
+    margin-left: 20px;
+
+    padding-top: 30px;
+}
+
+
+.welcome {
+    margin-bottom: 0;
+
+    color: #1d5c9c;
+
+    font-size: 14px;
+}
+
+
+.gotta {
+    margin-bottom: 0;
+    margin-top: 5px;
+
+    font-size: 30px;
+
+    color: #124a81;
+}
+
+
+.them {
+    margin-top: 3px;
+
+    font-size: 30px;
+
+    color: #9019c7;
+}
+
+
+.Discover {
+    position: absolute;
+
+    top: 210px;
+    right: 1150px;
+
+    margin-left: 20px;
+
+    max-width: 500px;
+
+    line-height: 1.5;
+
+    color: #0a0452;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* =========================
+   HERO LINE
+========================= */
+
+.hero-line {
+    width: 80%;
+
+    height: 1px;
+
+    margin: 30px 0 0 40px;
+
+    border: none;
+
+    background: linear-gradient(
+        to right,
+        rgba(30, 80, 120, 0.35),
+        rgba(30, 80, 120, 0.08),
+        transparent
+    );
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 80px;
+
+    height: 35px;
+}
+
+
+.explore-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    background: rgb(12, 12, 66);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.explore-btn:hover {
+    text-decoration: none;
+
+    color: white;
+
+    transform: translateY(-4px);
+
+    background: rgb(25, 25, 100);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.team-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    background: rgb(240, 237, 233);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    color: rgb(12, 12, 66);
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+.team-btn:hover {
+    text-decoration: none;
+
+    color: white;
+
+    transform: translateY(-5px);
+
+    background: rgba(173, 177, 194, 0.8);
+
+    box-shadow: 0 10px 30px rgba(80, 120, 255, 0.3);
+}
+
+
+/* =========================
+   VIEW ALL BUTTON
+========================= */
+
+.view-all {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 4px 12px rgba(60, 120, 170, 0.08);
+
+    transition: 0.3s ease;
+}
+
+
+.view-all span {
+    font-size: 16px;
+
+    transition: transform 0.3s ease;
+}
+
+
+.view-all:hover {
+    background: rgba(255, 255, 255, 0.75);
+
+    color: #174ea6;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(60, 120, 170, 0.15);
+
+    text-decoration: none;
+}
+
+
+.view-all:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #173b5f;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================
+   FEATURED POKEMON
+========================= */
+
+.featured-section {
+    margin: 30px 60px;
+}
+
+
+.pokemon-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+}
+
+
+.pokemon-card {
+    position: relative;
+
+    min-height: 215px;
+
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 6px 20px rgba(60, 120, 170, 0.12);
+
+    transition: 0.3s ease;
+}
+
+
+.pokemon-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(60, 120, 170, 0.2);
+}
+
+
+/* Pokemon number and heart */
+
+.card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #8193a3;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+}
+
+
+.heart {
+    font-size: 20px;
+
+    color: #71869a;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.heart:hover {
+    color: #ef476f;
+}
+
+
+/* Pokemon image area */
+
+.pokemon-area {
+    height: 125px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.pokemon-area img{
+    width: 150px;
+    height: 150px;
+    transition: ease 0.3s;
+}
+.pokemon-area img:hover{
+    transform: translateY(-6px);
+}
+
+/* Pokemon name */
+
+.pokemon-card h3 {
+    margin: 8px 0 8px;
+
+    color: #173b5f;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Pokemon type */
+
+.type {
+    display: inline-block;
+
+    padding: 5px 11px;
+
+    margin-right: 4px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Type colors */
+
+.electric {
+    background: #f7d84a;
+
+    color: #5c4d00;
+}
+
+
+.fire {
+    background: #ffb09d;
+
+    color: #8e2d1a;
+}
+
+
+.flying {
+    background: #c9d8ff;
+
+    color: #405b9b;
+}
+
+
+.grass {
+    background: #b9e5bb;
+
+    color: #26723a;
+}
+
+
+.poison {
+    background: #d9b8e8;
+
+    color: #713789;
+}
+
+
+.water {
+    background: #b9ddff;
+
+    color: #28649a;
+}
+
+
+.normal {
+    background: #dedede;
+
+    color: #555;
+}
+
+
+/* Arrow */
+
+.card-arrow {
+    position: absolute;
+
+    right: 10px;
+
+    bottom: 8px;
+
+    font-size: 20px;
+
+    color: #7895aa;
+
+    transition: 0.2s ease;
+}
+
+
+.pokemon-card:hover .card-arrow {
+    transform: translateX(3px);
+
+    color: #2563eb;
+}
+
+/* =========================
+   EXPLORE BY TYPE
+========================= */
+
+.types-section {
+    margin: 50px 60px;
+}
+
+
+.type-grid {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 14px;
+}
+
+
+.type-card {
+    padding: 20px 12px 18px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border: 1px solid rgba(255, 255, 255, 0.75);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 6px 20px rgba(60, 120, 170, 0.10);
+
+    transition: 0.3s ease;
+}
+
+
+.type-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 28px rgba(60, 120, 170, 0.18);
+}
+
+
+/* Type logo */
+
+.type-icon {
+    width: 52px;
+    height: 52px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 23px;
+
+    border: 2px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+}
+
+
+.type-card:hover .type-icon {
+    transform: scale(1.08);
+}
+
+
+/* Type name */
+
+.type-card h3 {
+    margin: 11px 0 5px;
+
+    color: #173b5f;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* Type description */
+
+.type-card p {
+    margin: 0;
+
+    color: #71869a;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================
+   TYPE COLORS
+========================= */
+
+.electric-type .type-icon {
+    background: #f7d84a;
+}
+
+
+.fire-type .type-icon {
+    background: #ff9b7b;
+}
+
+
+.water-type .type-icon {
+    background: #8fc9ff;
+}
+
+
+.grass-type .type-icon {
+    background: #9cda9f;
+}
+
+
+.psychic-type .type-icon {
+    background: #e9a1c7;
+}
+
+
+.ice-type .type-icon {
+    background: #aee7ef;
+}
+
+.unova,
+.hoenn,
+.johto,
+.kanto,
+.sinnoh {
+    width: 200px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+    
+.unova {
+    background-image: url("images/unova.png");
+}
+
+.hoenn {
+    background-image: url("images/hoenn.png");
+}
+
+.johto {
+    background-image: url("images/johto.png");
+}
+
+.kanto {
+    background-image: url("images/kanto.png");
+}
+
+.sinnoh {
+    background-image: url("images/sinnoh.png");
+}
+
+/* =========================
+   EXPLORE REGIONS
+========================= */
+
+/* =========================
+   EXPLORE REGIONS
+========================= */
+
+.regions-pokemon {
+    margin: 50px 60px;
+}
+
+/* Heading + View All */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-header a{
+       display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.45);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 4px 12px rgba(60, 120, 170, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.section-header h2 {
+    color: #173b5f;
+    font-size: 23px;
+    margin: 0;
+}
+
+.section-header a {
+    color: #173b5f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-header a:hover {
+        background: rgba(255, 255, 255, 0.75);
+
+    color: #174ea6;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(60, 120, 170, 0.15);
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   REGION CARDS
+========================= */
+
+.regions {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.region-card {
+     flex: 1;
+    min-width: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+/* Region Images */
+
+.region-card img {
+        width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.region-card:hover {
+    transform: translateY(-5px);
+}
+
+.region-card:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Region Names */
+
+.region-card p {
+    margin: 10px 0 0;
+    color: #173b5f;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.region-card:hover p {
+    color: #2878c8;
+}
+
+footer{
+    display: flex;
+    margin-top: 20px;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    /* NAVBAR */
+
+    nav {
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+
+    /* HERO */
+
+    .Discover {
+        position: static;
+        margin: 15px 20px 0;
+        max-width: 600px;
+    }
+
+
+    /* POKEMON */
+
+    .pokemon-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    /* TYPES */
+
+    .type-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    /* REGIONS */
+
+    .regions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .region-card img {
+        width: 100%;
+        height: 130px;
+    }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    /* NAVBAR */
+
+    nav {
+        flex-wrap: wrap;
+        padding: 12px 18px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .searchPokemon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .searchPokemon input {
+        width: 280px;
+    }
+
+
+    /* HERO */
+
+    .description {
+        margin-left: 25px;
+        padding-top: 25px;
+    }
+
+    .gotta,
+    .them {
+        font-size: 27px;
+    }
+
+    .Discover {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .hero-buttons {
+        margin-top: 50px;
+    }
+
+
+    /* POKEMON */
+
+    .featured-section {
+        margin: 40px 30px;
+    }
+
+    .pokemon-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* TYPES */
+
+    .types-section {
+        margin: 40px 30px;
+    }
+
+    .type-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* REGIONS */
+
+    .regions-pokemon {
+        margin: 40px 30px;
+    }
+
+    .regions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    /* =====================
+       BODY
+    ===================== */
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* =====================
+       HEADER / NAVBAR
+    ===================== */
+
+    header {
+        margin: 8px;
+        border-radius: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 15px 10px;
+
+        gap: 15px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 21px;
+    }
+
+    .pokeball-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .nav-links {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 10px 17px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    /* SEARCH */
+
+    .searchPokemon {
+        width: 100%;
+    }
+
+    .searchPokemon input {
+        width: 90%;
+        max-width: 320px;
+
+        padding: 10px 15px;
+    }
+
+
+    /* =====================
+       HERO
+    ===================== */
+
+    .description {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        padding-top: 25px;
+    }
+
+    .welcome {
+        font-size: 12px;
+    }
+
+    .gotta,
+    .them {
+        font-size: 25px;
+    }
+
+    .Discover {
+        position: static;
+
+        margin: 15px 20px 0;
+
+        max-width: none;
+
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* HERO LINE */
+
+    .hero-line {
+        width: 85%;
+        margin: 25px auto 0;
+    }
+
+
+    /* HERO BUTTONS */
+
+    .hero-buttons {
+        margin-top: 45px;
+
+        height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        margin-left: 20px;
+    }
+
+    .explore-btn,
+    .team-btn {
+        padding: 11px 20px;
+        font-size: 12px;
+    }
+
+
+    /* =====================
+       SECTION HEADINGS
+    ===================== */
+
+    .section-heading,
+    .section-header {
+        gap: 10px;
+    }
+
+    .section-heading h2,
+    .section-header h2 {
+        font-size: 19px;
+    }
+
+    .view-all,
+    .section-header a {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+
+
+    /* =====================
+       FEATURED POKEMON
+    ===================== */
+
+    .featured-section {
+        margin: 40px 20px;
+    }
+
+    .pokemon-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .pokemon-card {
+        min-height: 205px;
+        padding: 10px;
+    }
+
+    .pokemon-area {
+        height: 115px;
+    }
+
+    .pokemon-area img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .pokemon-card h3 {
+        font-size: 14px;
+    }
+
+    .type {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+
+
+    /* =====================
+       TYPES
+    ===================== */
+
+    .types-section {
+        margin: 40px 20px;
+    }
+
+    .type-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .type-card {
+        padding: 15px 8px;
+    }
+
+    .type-icon {
+        width: 45px;
+        height: 45px;
+
+        font-size: 20px;
+    }
+
+    .type-card h3 {
+        font-size: 13px;
+    }
+
+    .type-card p {
+        font-size: 9px;
+    }
+
+
+    /* =====================
+       REGIONS
+    ===================== */
+
+    .regions-pokemon {
+        margin: 40px 20px;
+    }
+
+    .regions {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .region-card img {
+        height: 100px;
+        border-radius: 12px;
+    }
+
+    .region-card p {
+        font-size: 13px;
+        margin-top: 7px;
+    }
+
+
+    /* =====================
+       FOOTER
+    ===================== */
+
+    footer {
+        margin-top: 30px;
+
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    /* NAV */
+
+    .nav-links {
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+
+    /* HERO */
+
+    .gotta,
+    .them {
+        font-size: 22px;
+    }
+
+    .Discover {
+        font-size: 13px;
+    }
+
+
+    /* BUTTONS */
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .explore-btn,
+    .team-btn {
+        width: 150px;
+    }
+
+
+    /* POKEMON */
+
+    .pokemon-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pokemon-card {
+        min-height: 220px;
+    }
+
+    .pokemon-area {
+        height: 135px;
+    }
+
+
+    /* TYPES */
+
+    .type-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* REGIONS */
+
+    .regions {
+        grid-template-columns: 1fr;
+    }
+
+    .region-card img {
+        height: 140px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL SCREENS
+========================= */
+
+@media (max-width: 320px) {
+
+    .nav-links {
+        gap: 7px 10px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .logo h1 {
+        font-size: 19px;
+    }
+
+    .pokemon-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .type-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

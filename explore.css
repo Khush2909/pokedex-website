@@ -1,0 +1,966 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("explore-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222;
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 25px rgba(80, 150, 200, 0.15);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 25px;
+
+    color: #173b5f;
+}
+
+
+nav:hover {
+    cursor: pointer;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+
+    color: #173b5f;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   NAVIGATION LINKS
+========================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 38px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #173b5f;
+}
+
+
+a:hover {
+    color: #2563eb;
+
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.searchPokemon input {
+    background: rgba(255, 255, 255, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 12px;
+
+    padding: 12px 20px;
+
+    color: #1f3b5b;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(80, 150, 200, 0.15);
+
+    outline: none;
+}
+
+
+.searchPokemon input::placeholder {
+    color: #6f8497;
+}
+
+
+.searchPokemon input:focus {
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+
+/* =========================
+   POKEBALL LOGO
+========================= */
+
+.pokeball-logo {
+    width: 45px;
+    height: 45px;
+
+    background: linear-gradient(
+        to bottom,
+        #ef4444 0%,
+        #ef4444 46%,
+        #111827 46%,
+        #111827 54%,
+        #ffffff 54%,
+        #ffffff 100%
+    );
+
+    border: 3px solid #111827;
+
+    border-radius: 50%;
+
+    position: relative;
+}
+
+
+.pokeball-center {
+    width: 14px;
+    height: 14px;
+
+    background: white;
+
+    border: 3px solid #111827;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+/* HEADER SEARCH */
+
+.header-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-search input {
+    width: 170px;
+    padding: 9px 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+
+    outline: none;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-box {
+    width: 94%;
+    margin: 40px auto 25px;
+
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero-line {
+    margin-top: 8px;
+    color: #666;
+}
+
+
+/* ================= SEARCH ================= */
+
+.searchbyname {
+    width: 94%;
+    margin: 25px auto;
+}
+
+.searchbyname input {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 15px;
+
+    outline: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+
+    background: rgba(255,255,255,0.7);
+}
+
+
+/* ================= TYPE FILTER ================= */
+
+.type-filters {
+    width: 94%;
+    margin: 20px auto;
+
+    display: flex;
+    gap: 10px;
+
+    overflow-x: auto;
+
+    padding-bottom: 8px;
+}
+
+.type-btn {
+    flex-shrink: 0;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 9px 16px;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+
+    background: rgba(255,255,255,0.7);
+
+    transition: 0.2s;
+}
+
+.type-btn:hover {
+    transform: translateY(-2px);
+}
+
+.type-btn.active {
+    background: #222;
+    color: white;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.generation {
+    width: 94%;
+    margin: 20px auto;
+
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 12px;
+}
+
+.generation select {
+    padding: 10px 15px;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.8);
+
+    font-family: "Poppins", sans-serif;
+
+    outline: none;
+}
+
+
+/* ================= GRID ================= */
+
+.pokemon-grid {
+    width: 94%;
+    margin: 40px auto 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+
+/* ================= CARD ================= */
+
+.pokemon-card {
+    position: relative;
+
+    min-height: 235px;
+
+    padding: 12px;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.62);
+
+    border: 1px solid rgba(255,255,255,0.8);
+
+    backdrop-filter: blur(12px);
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+
+/* ================= CARD TOP ================= */
+
+.card-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #777;
+}
+
+.heart {
+    font-size: 23px;
+    cursor: pointer;
+
+    color: #555;
+}
+
+.heart:hover {
+    color: #e63946;
+}
+
+
+/* ================= POKEMON IMAGE ================= */
+
+.pokemon-area {
+    height: 125px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-area img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    image-rendering: auto;
+
+    transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover .pokemon-area img {
+    transform: scale(1.12);
+}
+
+
+/* ================= NAME ================= */
+
+.pokemon-card h3 {
+    margin-top: 4px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+/* ================= TYPE ================= */
+
+.type {
+    display: inline-block;
+
+    margin-top: 7px;
+    margin-right: 3px;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* ================= TYPE COLORS ================= */
+
+.type.normal {
+    background: #d8d8d8;
+    color: #333;
+}
+
+.type.fire {
+    background: #ff866b;
+    color: white;
+}
+
+.type.water {
+    background: #62aef5;
+    color: white;
+}
+
+.type.grass {
+    background: #70c850;
+    color: white;
+}
+
+.type.electric {
+    background: #f5d142;
+    color: #333;
+}
+
+.type.ice {
+    background: #8edfe5;
+    color: #333;
+}
+
+.type.fighting {
+    background: #c84d4d;
+    color: white;
+}
+
+.type.poison {
+    background: #a65db5;
+    color: white;
+}
+
+.type.ground {
+    background: #c49a6c;
+    color: white;
+}
+
+.type.flying {
+    background: #91bdf2;
+    color: white;
+}
+
+.type.psychic {
+    background: #e878a7;
+    color: white;
+}
+
+.type.bug {
+    background: #8baa45;
+    color: white;
+}
+
+.type.rock {
+    background: #a08d68;
+    color: white;
+}
+
+.type.ghost {
+    background: #716486;
+    color: white;
+}
+
+.type.dragon {
+    background: #d47b3e;
+    color: white;
+}
+
+.type.dark {
+    background: #46414a;
+    color: white;
+}
+
+.type.steel {
+    background: #89949e;
+    color: white;
+}
+
+.type.fairy {
+    background: #df9cba;
+    color: white;
+}
+
+
+/* ================= ARROW ================= */
+
+.card-arrow {
+    position: absolute;
+
+    right: 15px;
+    bottom: 13px;
+
+    font-size: 25px;
+
+    color: #777;
+
+    transition: 0.3s;
+}
+
+.pokemon-card:hover .card-arrow {
+    transform: translateX(4px);
+
+    color: #222;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 1200px) {
+
+    /* Navbar */
+
+    nav {
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 22px;
+    }
+
+
+    /* Pokémon */
+
+    .pokemon-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+    /* Navbar */
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-search input {
+        width: 250px;
+    }
+
+
+    /* Hero */
+
+    .hero-heading {
+        font-size: 36px;
+    }
+
+
+    /* Search */
+
+    .searchbyname {
+        width: 92%;
+    }
+
+
+    /* Generation */
+
+    .generation {
+        width: 92%;
+    }
+
+
+    /* Pokémon */
+
+    .pokemon-grid {
+        width: 92%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    /* =====================
+       HEADER
+    ===================== */
+
+    header {
+        margin: 8px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        padding: 15px 10px;
+
+        gap: 15px;
+    }
+
+
+    /* Logo */
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo h1 {
+        font-size: 21px;
+    }
+
+    .pokeball-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* Navigation */
+
+    .nav-links {
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 17px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    /* Search */
+
+    .header-search {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-search input {
+        width: 90%;
+        max-width: 320px;
+
+        padding: 9px 14px;
+    }
+
+
+    /* =====================
+       HERO
+    ===================== */
+
+    .hero-box {
+        width: 90%;
+        margin: 30px auto 20px;
+    }
+
+    .hero-heading {
+        font-size: 29px;
+        line-height: 1.25;
+    }
+
+    .hero-line {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+
+    /* =====================
+       SEARCH BY NAME
+    ===================== */
+
+    .searchbyname {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .searchbyname input {
+        padding: 13px 15px;
+        font-size: 12px;
+    }
+
+
+    /* =====================
+       TYPE FILTER
+    ===================== */
+
+    .type-filters {
+        width: 90%;
+
+        gap: 8px;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+    }
+
+    .type-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .type-btn {
+        padding: 8px 13px;
+        font-size: 11px;
+    }
+
+
+    /* =====================
+       GENERATION
+    ===================== */
+
+    .generation {
+        width: 90%;
+
+        justify-content: flex-start;
+
+        margin: 15px auto;
+    }
+
+    .generation select {
+        width: 100%;
+
+        padding: 9px 12px;
+
+        font-size: 12px;
+    }
+
+
+    /* =====================
+       POKÉMON GRID
+    ===================== */
+
+    .pokemon-grid {
+        width: 90%;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+
+        margin: 30px auto 50px;
+    }
+
+
+    /* =====================
+       POKÉMON CARD
+    ===================== */
+
+    .pokemon-card {
+        min-height: 210px;
+
+        padding: 10px;
+
+        border-radius: 14px;
+    }
+
+
+    .card-top {
+        font-size: 11px;
+    }
+
+    .heart {
+        font-size: 20px;
+    }
+
+
+    /* Pokémon image */
+
+    .pokemon-area {
+        height: 115px;
+    }
+
+    .pokemon-area img {
+        width: 105px;
+        height: 105px;
+    }
+
+
+    /* Name */
+
+    .pokemon-card h3 {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+
+    /* Type */
+
+    .type {
+        font-size: 8px;
+
+        padding: 4px 7px;
+
+        margin-top: 6px;
+    }
+
+
+    /* Arrow */
+
+    .card-arrow {
+        right: 10px;
+        bottom: 9px;
+
+        font-size: 20px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 420px) {
+
+    /* Navbar */
+
+    .nav-links {
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+
+    /* Hero */
+
+    .hero-heading {
+        font-size: 26px;
+    }
+
+
+    /* Pokémon */
+
+    .pokemon-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .pokemon-card {
+        min-height: 230px;
+    }
+
+    .pokemon-area {
+        height: 135px;
+    }
+
+    .pokemon-area img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .pokemon-card h3 {
+        font-size: 16px;
+    }
+
+    .type {
+        font-size: 9px;
+        padding: 4px 9px;
+    }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONE
+========================= */
+
+@media (max-width: 320px) {
+
+    .nav-links {
+        gap: 7px 10px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .hero-heading {
+        font-size: 23px;
+    }
+
+    .pokemon-grid {
+        width: 88%;
+    }
+
+}
